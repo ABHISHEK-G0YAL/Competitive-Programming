@@ -83,3 +83,29 @@ int main()
         cout<<product<<endl;
     }
 }
+// Older Version
+
+//     while(t--)
+//     {
+//         ui n,k;
+//         cin>>n>>k;
+//         ui a[n];
+//         ui p[n]={};
+//         for(ui i=0;i<n;i++)
+//             cin>>a[i];
+//         sort(a,a+n);
+//         ull product=1;
+//         for(ui i=1;i<=(n-1)/2;i++)
+//         {
+//         	ui power=0;
+//             for(ui j=1;j<=min(k-2,i);j++)
+//                 power=(power  +  (C[i][j] * C[n-1-i][k-1-j]) % mod1)%mod1;
+//             // cout<<a[i]<<" : "<<power<<endl;
+//             // if(n-1-i != i)
+//             //     cout<<a[n-1-i]<<" : "<<power<<endl;
+//             product=(product*pow(a[i],power))%mod;
+//             if(n-1-i != i)
+//             	product=(product*pow(a[n-1-i],power))%mod;
+//         }
+//         cout<<product<<endl;
+//     }
