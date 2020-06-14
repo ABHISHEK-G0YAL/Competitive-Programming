@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,i,sum=0;
+    scanf("%d",&n);
+    char a[n][50];
+    for(i=0;i<n;i++)
+    scanf("%s",a[n]);
+    for(i=0;i<n;i++)
+    {
+        for(i=0;i<strlen(a[n]);i++)
+        {
+            if(a[n][i]=='a' || a[n][i]=='e' || a[n][i]=='i' || a[n][i]=='o' || a[n][i]=='u' || a[n][i]=='A' || a[n][i]=='E' || a[n][i]=='I' || a[n][i]=='O' || a[n][i]=='U')
+                sum=sum+a[n][i];
+        }
+        if(sum==0)
+        printf("101\n");
+        else
+        printf("%d\n",sum);
+        sum=0;
+    }
+    return 0;
+}

@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,n;
+    scanf("%d",&n);
+    int s[n];
+    for(i=0;i<n;i++)
+    scanf("%d",&s[i]);
+    for(i=0;i<n;i++)
+    {
+        if(s[i]>=38)
+        {
+            if(s[i]%5==4)
+                s[i]=s[i]+1;
+            else if(s[i]%5==3)
+                s[i]=s[i]+2;
+        }
+    }
+    for(i=0;i<n;i++)
+        printf("%d\n",s[i]);
+    return 0;
+}
