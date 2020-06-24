@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/ZUBTRCNT
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -9,7 +11,7 @@ int main()
 		int l,k,sum=0;
 		cin >> l >> k;
 		for(int i=l-k+1;i>0;i--)
-		sum=sum+i;
+			sum=sum+i;
 		cout<<"Case "<<j<<": "<<sum<<endl;
 	}
 }

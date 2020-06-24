@@ -1,7 +1,8 @@
+// https://www.codechef.com/problems/CK87QUER
+
 #include <iostream>
 #include <math.h>
 using namespace std;
-
 
 int main()
 {

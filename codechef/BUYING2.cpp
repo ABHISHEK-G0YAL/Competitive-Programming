@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/BUYING2/
+
 #include <iostream>
 using namespace std;
 

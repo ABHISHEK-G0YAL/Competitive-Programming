@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/POTATOES
+
 #include <iostream>
 #include <math.h>
 

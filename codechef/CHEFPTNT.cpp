@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/CHEFPTNT
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -28,6 +30,7 @@ int main()
 	}
 	return 0;
 }
+
 // Older Version (100 pts)
 
 // #include<iostream>

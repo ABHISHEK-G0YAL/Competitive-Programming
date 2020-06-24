@@ -1,8 +1,9 @@
+// https://www.codechef.com/problems/SMRSTR
+
 #include <iostream>
 using namespace std;
  
 int main() {
-	// your code goes here
 	long long t,i,n,q;
 	cin>>t;
 	while(t--)
@@ -22,4 +23,4 @@ int main() {
 	    cout<<endl;
 	}
 	return 0;
-}    
+}

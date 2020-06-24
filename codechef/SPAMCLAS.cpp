@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/SPAMCLAS
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()

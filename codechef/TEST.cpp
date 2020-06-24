@@ -1,6 +1,8 @@
+// https://www.codechef.com/problems/TEST
+
 #include <iostream>
 using namespace std;
- 
+
 int main()
 {
 	int x;
@@ -13,4 +15,4 @@ int main()
 			cout<<x<<endl;
 	}
 	return 0;
-} 
+}

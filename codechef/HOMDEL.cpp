@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/HOMDEL
+
 #include <iostream>
 using namespace std;
  
