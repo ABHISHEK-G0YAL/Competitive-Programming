@@ -1,3 +1,5 @@
+// https://www.facebook.com/hackercup/problem/1632703893518337/
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -34,4 +36,3 @@ int main()
     }
     return 0;
 }
-
