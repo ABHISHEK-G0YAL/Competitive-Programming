@@ -1,1 +1,0 @@
-**1 8 7** and **17 8 1** are the valid permutations.
