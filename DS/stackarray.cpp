@@ -33,12 +33,8 @@ void print()
     cout<<A[top]<<endl;
 
 }
-
-
-
 int main()
 {
-
     push(10);
     push(20);
     print();
