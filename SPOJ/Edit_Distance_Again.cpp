@@ -1,7 +1,11 @@
+// https://www.spoj.com/problems/EDIT/
+
 #include <iostream>
 using namespace std;
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 	string s;
 	int c1,c2;
 	while(cin>>s)

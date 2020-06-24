@@ -1,3 +1,5 @@
+// https://www.spoj.com/problems/ALCATRAZ1/
+
 #include <iostream>
 using namespace std;
 

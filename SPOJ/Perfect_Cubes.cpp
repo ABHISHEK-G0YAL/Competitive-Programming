@@ -1,3 +1,5 @@
+// https://www.spoj.com/problems/CUBES/
+
 #include <iostream>
 #define n 100
 #define cube(x) (x*x*x)

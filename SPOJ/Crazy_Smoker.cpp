@@ -1,3 +1,5 @@
+// https://www.spoj.com/problems/CRZYSMKR/
+
 #include <iostream>
 using namespace std;
 
