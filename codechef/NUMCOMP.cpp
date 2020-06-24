@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/NUMCOMP
+
 #include <iostream>
 #include <math.h>
 using namespace std;
