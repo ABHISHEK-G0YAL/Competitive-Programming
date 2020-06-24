@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/AMR15D
+
 #include <bits/stdc++.h>
 using namespace std;
 

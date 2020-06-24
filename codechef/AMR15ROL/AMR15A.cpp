@@ -1,6 +1,7 @@
+// https://www.codechef.com/problems/AMR15A
+
 #include <bits/stdc++.h>
 using namespace std;
-
 
 int main(int argc, char const *argv[])
 {

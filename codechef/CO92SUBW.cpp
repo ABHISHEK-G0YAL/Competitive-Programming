@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/CO92SUBW
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
