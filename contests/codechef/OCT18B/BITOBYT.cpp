@@ -1,3 +1,5 @@
+// https://www.codechef.com/OCT18B/problems/BITOBYT
+
 #include <iostream>
 #define ull unsigned long long
 using namespace std;

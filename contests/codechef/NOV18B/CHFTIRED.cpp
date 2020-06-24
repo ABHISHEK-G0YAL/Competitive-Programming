@@ -1,3 +1,5 @@
+// https://www.codechef.com/NOV18B/problems/CHFTIRED/
+
 #include <iostream>
 using namespace std;
 

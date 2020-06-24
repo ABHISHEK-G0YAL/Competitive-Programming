@@ -1,3 +1,5 @@
+// https://www.codechef.com/OCT18B/problems/HMAPPY
+
 #include <iostream>
 #include <vector>
 #define ll long long

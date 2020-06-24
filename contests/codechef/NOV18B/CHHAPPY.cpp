@@ -1,3 +1,5 @@
+// https://www.codechef.com/NOV18B/problems/CHHAPPY/
+
 #include <iostream>
 #include <vector>
 using namespace std;

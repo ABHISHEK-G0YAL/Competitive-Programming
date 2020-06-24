@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/MAGICHF2
+
 #include <iostream>
 using namespace std;
 int main() {
