@@ -1,3 +1,5 @@
+// https://codingcompetitions.withgoogle.com/codejam/round/00000000000000cb/0000000000007966
+
 #include <bits/stdc++.h>
 using namespace std;
 #define SWAP(a,b) {char temp; temp=a; a=b; b=temp;}
