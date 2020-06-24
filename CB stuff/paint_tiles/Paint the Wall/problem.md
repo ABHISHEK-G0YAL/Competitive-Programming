@@ -1,3 +1,0 @@
-Abhishek has moved to a new apartment and is happy. But the wall of his room looks white and dull. So, he decides to paint the wall. The wall of the room can be described by two integers **N** and **M** denoting height and width respectively. Abhishek is creative and doesn’t want to color the whole wall with one color.
-
-So Abhishek came up with an idea of coloring the wall. He says let’s consider the wall to be a matrix of **N x M** blocks. He will paint **R<sub>i</sub>** blocks in each row (0 ≤  i < N), also he wants only **C<sub>i</sub>** blocks to be painted in each column (0 ≤ i < M). He will keep the rest of the blocks uncolored. Now tell Abhishek, In how many ways can he paint the wall.
