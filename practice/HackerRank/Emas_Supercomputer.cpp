@@ -11,41 +11,9 @@ int twoPluses(vector<string> gr) {
     static const int n = grid.size(), m = grid[0].size();
     class plus {
         int x, y, len, area;
-        bool intersect(plus &p) {
-            int len = this->len - 1;
-            int plen = p.len - 1;
-            if(y == p.y and x + len >= p.x - plen and p.x + plen >= x - len)
-                return true;
-            if(x == p.x and y + len >= p.y - plen and p.y + plen >= y - len)
-                return true;
-            if(p.x >= x - len and p.x <= x + len and p.y - plen <= y and p.y + plen >= y)
-                return true;
-            if(p.y >= y - len and p.y <= y + len and p.x - plen <= x and p.x + plen >= x)
-                return true;
-            return false;
-        }
-        void ungrow() {
-            if(area > 1) {
-                area -= 4;
-                len -=1;
-            }
-            else {
-                area = 0;
-                len = 0;
-            }
-        }
     public:
         plus(int x, int y) : x(x), y(y), len(0), area(0) {}
         int getArea() { return area; }
-        bool growIfNotIntersect(plus &p) {
-            if(grow()) {
-                if(intersect(p))
-                    ungrow();
-                else
-                    return true;
-            }
-            return false;
-        }
         bool grow() {
             if(len == 0 and grid[x][y] == 'G') {
                 len = 1;
@@ -62,6 +30,18 @@ int twoPluses(vector<string> gr) {
             }
             return false;
         }
+        bool intersect(plus p) {
+            int len = this->len - 1;
+            if(x == p.x and x + len >= p.x - p.len and p.x + p.len >= x - len)
+                return true;
+            if(y == p.y and y + len >= p.y - p.len and p.y + p.len >= y - len)
+                return true;
+            if(p.x >= x - len and p.x <= x + len and p.y - p.len <= y and p.y + p.len >= y)
+                return true;
+            if(p.y >= y - len and p.y <= y + len and p.x - p.len <= x and p.x + p.len >= x)
+                return true;
+            return false;
+        }
     };
     int maxAP = 0;
     for(int i = 0; i < n; i++) {
@@ -71,7 +51,7 @@ int twoPluses(vector<string> gr) {
                 for(int i = 0; i < n; i++) {
                     for(int j = 0; j < m; j++) {
                         plus p(i, j);
-                        while(p.growIfNotIntersect(P));
+                        while(p.grow() and !P.intersect(p));
                         maxAP = max(maxAP, P.getArea() * p.getArea());
                     }
                 }
