@@ -1,52 +1,32 @@
 // https://www.codechef.com/MAY18A/problems/MTYFRI
 
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    int t,n,k,summ,sumt;
-    cin>>t;
-    while(t--)
-    {
-        cin>>n>>k;
-        int m[(n+1)/2];
-        int t[n/2];
-        for(int i = 0; i < n; i++)
-        {
-            if(i%2==0)
-            cin>>m[i/2];
+int main() {
+    int t, n, k, summ, sumt;
+    cin >> t;
+    while(t--) {
+        cin >> n >> k;
+        int n1 = (n + 1) / 2, n2 = n / 2;
+        int m[n1], t[n2];
+        for(int i = 0; i < n; i++) {
+            if(i % 2 == 0)
+                cin >> m[i / 2];
             else
-            cin>>t[i/2];
+                cin >> t[i / 2];
         }
-        sort(m,m+((n+1)/2));
-        sort(t,t+(n/2));
-        summ=0;
-        sumt=0;
-        for(int i = 0; i < ((n+1)/2); i++)
-        {
-            //cout<<m[i]<<" ";
-            if(i<k && i < (n/2))
-            summ+=t[i];
-            else
-            summ+=m[((k>=((n+1)/2))?0:i-k)];
-        }
-        //cout<<endl;
-        for(int i = 0; i < (n/2); i++)
-        {
-            //cout<<t[i]<<" ";
-            if(i<k)
-            sumt+=m[((n+1)/2)-1-i];
-            else
-            sumt+=t[i];
-        }
-        //cout<<endl;
-        //cout<<summ<<" "<<sumt<<endl;
-        if(sumt>summ)
-        cout<<"YES"<<endl;
+        sort(m, m + n1, greater<int>());
+        sort(t, t + n2);
+        for(int i = 0; i < k and i < n2; i++)
+            if(m[i] > t[i])
+                swap(m[i], t[i]);
+        summ = accumulate(m, m + n1, 0);
+        sumt = accumulate(t, t + n2, 0);
+        if(sumt > summ)
+            cout<<"YES"<<endl;
         else
-        cout<<"NO"<<endl;
+            cout<<"NO"<<endl;
     }
     return 0;
 }
