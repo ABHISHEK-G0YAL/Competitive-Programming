@@ -14,12 +14,13 @@ int main() {
             cin>>x;
             s.insert(x);
         }
-        if(s.size() > 2)
-            cout << -1 << endl;
-        else if(s.size() == 2) {
+        if(s.size() == 1 and *s.begin() == 0)
+            cout << n << endl;
+        else if(s.size() == 1 and *s.begin() == n - 1)
+            cout << 0 << endl;
+        else if(s.size() == 2 and abs(*s.begin() - *next(s.begin())) == 1)
             cout << n - max(*s.begin(), *next(s.begin())) << endl;
-        }
         else
-            cout << n - *s.begin() << endl;
+            cout << -1 << endl;
     }
 }
