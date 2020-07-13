@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/cpp-variadics/problem
-// Accepted
 
 
 template<typename = void> int reversed_binary_value() {

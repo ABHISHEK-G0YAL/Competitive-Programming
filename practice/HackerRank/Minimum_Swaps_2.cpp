@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/minimum-swaps-2/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

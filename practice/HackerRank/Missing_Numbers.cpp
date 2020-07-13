@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/missing-numbers/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

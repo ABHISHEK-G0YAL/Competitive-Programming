@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/kaprekar-numbers/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

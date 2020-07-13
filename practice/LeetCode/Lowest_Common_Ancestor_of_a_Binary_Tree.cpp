@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
-// Accepted    12 ms
 
 class Solution {
 public:

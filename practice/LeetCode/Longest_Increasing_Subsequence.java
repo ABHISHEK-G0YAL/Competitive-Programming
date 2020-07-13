@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/longest-increasing-subsequence/
-// Accepted    91 ms
 
 public class Solution {
     public int lengthOfLIS(int[] nums) {

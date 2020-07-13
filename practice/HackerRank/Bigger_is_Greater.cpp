@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/bigger-is-greater/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

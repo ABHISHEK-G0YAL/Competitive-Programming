@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/first-unique-character-in-a-string/
-// Accepted    40 ms
 
 class Solution {
 public:

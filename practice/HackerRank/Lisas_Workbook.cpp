@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/lisa-workbook/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

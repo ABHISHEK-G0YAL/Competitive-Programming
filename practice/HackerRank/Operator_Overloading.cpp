@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/operator-overloading/problem
-// Accepted
 
 
 class Matrix {

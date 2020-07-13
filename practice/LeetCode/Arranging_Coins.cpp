@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/arranging-coins/
-// Accepted    12 ms
 
 class Solution {
 public:

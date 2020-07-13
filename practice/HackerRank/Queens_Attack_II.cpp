@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/queens-attack-2/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

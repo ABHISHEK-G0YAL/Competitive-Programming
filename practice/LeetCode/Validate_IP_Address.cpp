@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/validate-ip-address/
-// Accepted    0 ms
 
 class Solution {
 public:

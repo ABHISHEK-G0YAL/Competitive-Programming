@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/inherited-code/problem
-// Accepted
 
 
 class BadLengthException {

@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/interleaving-string/
-// Accepted    0 ms
 
 class Solution {
 public:

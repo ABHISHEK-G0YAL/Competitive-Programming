@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/edit-distance/0
-// Correct
 
 #include <bits/stdc++.h>
 

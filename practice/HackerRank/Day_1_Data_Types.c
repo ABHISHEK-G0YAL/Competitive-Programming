@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/30-data-types/problem
-// Accepted
 
     
     // Declare second integer, double, and String variables.

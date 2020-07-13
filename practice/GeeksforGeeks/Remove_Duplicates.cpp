@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/remove-duplicates/0
-// Correct
 
 #include<bits/stdc++.h>
 using namespace std;

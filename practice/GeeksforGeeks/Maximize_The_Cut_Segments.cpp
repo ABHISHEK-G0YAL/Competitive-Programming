@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/cutted-segments/0
-// Correct
 
 #include <bits/stdc++.h>
 using namespace std;

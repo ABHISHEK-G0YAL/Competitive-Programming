@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/maximum-width-of-binary-tree/
-// Accepted    88 ms
 
 /**
  * Definition for a binary tree node.

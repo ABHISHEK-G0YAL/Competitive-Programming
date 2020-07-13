@@ -1,4 +1,5 @@
 //This is The Coding Area
+
 #include <iostream>
 using namespace std;
 int phi(int n)

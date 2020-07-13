@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/two-sum/
-// Accepted    4 ms
 
 class Solution {
 public:

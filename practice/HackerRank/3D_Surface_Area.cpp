@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/3d-surface-area/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

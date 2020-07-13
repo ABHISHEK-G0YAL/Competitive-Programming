@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/plus-minus/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

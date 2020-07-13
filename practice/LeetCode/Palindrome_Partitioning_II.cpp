@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/palindrome-partitioning-ii/
-// Accepted    1800 ms
 
 class Solution {
     class default_int {

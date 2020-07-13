@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/s10-basic-statistics/problem
-// Accepted
 
 #include <cmath>
 #include <cstdio>

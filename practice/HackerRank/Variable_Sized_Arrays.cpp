@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/variable-sized-arrays/problem
-// Accepted
 
 #include <vector>
 #include <iostream>

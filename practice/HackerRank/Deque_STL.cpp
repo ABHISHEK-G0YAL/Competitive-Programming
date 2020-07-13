@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/deque-stl/problem
-// Accepted
 
 #include <iostream>
 #include <deque> 

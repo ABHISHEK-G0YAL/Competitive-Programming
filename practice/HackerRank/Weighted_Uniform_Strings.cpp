@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/weighted-uniform-string/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

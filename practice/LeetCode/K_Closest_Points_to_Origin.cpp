@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/k-closest-points-to-origin/
-// Accepted    632 ms
 
 //compare dist b/w 2 points
 class Solution {

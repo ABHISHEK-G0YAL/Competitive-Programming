@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/2d-array/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

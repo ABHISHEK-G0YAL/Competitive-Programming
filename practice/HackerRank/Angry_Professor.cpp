@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/angry-professor/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

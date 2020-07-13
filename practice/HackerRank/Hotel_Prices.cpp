@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/hotel-prices/problem
-// Accepted
 
 #include <iostream>
 #include <vector>

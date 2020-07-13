@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/maximizing-xor/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

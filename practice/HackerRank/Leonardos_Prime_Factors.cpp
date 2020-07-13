@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/leonardo-and-prime/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

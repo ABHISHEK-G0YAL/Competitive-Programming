@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/count-and-say/
-// Accepted    0 ms
 
 class Solution {
 public:

@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/valid-palindrome/
-// Accepted    8 ms
 
 class Solution {
 public:

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/bon-appetit/problem
-// Accepted
 
 #include <map>
 #include <set>

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/array-left-rotation/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

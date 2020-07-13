@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/kangaroo/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

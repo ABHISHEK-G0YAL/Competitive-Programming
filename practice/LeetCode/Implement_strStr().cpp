@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/implement-strstr/
-// Accepted    4 ms
 
 class Solution {
 public:

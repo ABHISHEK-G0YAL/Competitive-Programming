@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/recover-binary-search-tree/
-// Accepted    32 ms
 
 /**
  * Definition for a binary tree node.

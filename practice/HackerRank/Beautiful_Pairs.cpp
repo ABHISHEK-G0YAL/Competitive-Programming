@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/beautiful-pairs/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define MAX 1001

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/beautiful-triplets/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

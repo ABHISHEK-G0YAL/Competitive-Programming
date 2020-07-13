@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/stone-game-ii/
-// Accepted    12 ms
 
 class Solution {
     vector<vector<vector<int> > > mem = vector<vector<vector<int> > >(2, vector<vector<int>>(105, vector<int>(105, -1)));

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/permutation-equation/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define loop(x, n) for(int x = 0; x < n; ++ x)

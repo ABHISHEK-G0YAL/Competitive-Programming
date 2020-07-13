@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/library-fine/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

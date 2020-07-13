@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/greedy-florist/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

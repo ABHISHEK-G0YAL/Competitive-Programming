@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
-// Accepted    24 ms
 
 /**
  * Definition for a binary tree node.

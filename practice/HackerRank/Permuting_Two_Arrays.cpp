@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/two-arrays/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

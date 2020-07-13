@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/priyanka-and-toys/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define MAX 10001

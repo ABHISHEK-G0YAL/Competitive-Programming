@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/find-common-characters/
-// Accepted    12 ms
 
 class Solution {
 public:

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/marcs-cakewalk/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

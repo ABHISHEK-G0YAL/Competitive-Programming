@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/c-tutorial-functions/problem
-// Accepted
 
 #include <iostream>
 using namespace std;

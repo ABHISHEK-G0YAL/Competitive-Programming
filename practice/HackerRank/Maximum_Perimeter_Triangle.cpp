@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

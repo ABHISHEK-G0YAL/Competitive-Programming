@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/summing-the-n-series/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define mod 1000000007

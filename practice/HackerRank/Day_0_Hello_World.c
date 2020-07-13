@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/30-hello-world/problem
-// Accepted
 
 int main() {
     // Declare a variable named 'input_string' to hold our input.

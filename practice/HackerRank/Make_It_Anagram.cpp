@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/make-it-anagram-mglines/problem
-// Accepted
 
 
 #include <cmath>

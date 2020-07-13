@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/equality-in-a-array/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define max(x) *max_element(x,x+101)

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/js10-hello-world/problem
-// Accepted
 
 /**
 *   A line of code that prints "Hello, World!" on a new line is provided in the editor. 

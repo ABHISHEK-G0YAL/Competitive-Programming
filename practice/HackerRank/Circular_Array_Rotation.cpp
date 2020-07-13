@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/circular-array-rotation/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1
-// Correct
 
 #include <bits/stdc++.h>
 using namespace std;

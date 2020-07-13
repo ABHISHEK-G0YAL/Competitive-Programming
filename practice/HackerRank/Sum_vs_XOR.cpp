@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/sum-vs-xor/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

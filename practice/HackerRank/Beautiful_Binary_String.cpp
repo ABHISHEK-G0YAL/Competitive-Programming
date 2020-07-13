@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/beautiful-binary-string/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

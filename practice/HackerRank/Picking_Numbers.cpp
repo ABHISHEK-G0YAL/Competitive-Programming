@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/picking-numbers/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

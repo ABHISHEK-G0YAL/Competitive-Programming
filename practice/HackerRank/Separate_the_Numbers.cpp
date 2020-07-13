@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/separate-the-numbers/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

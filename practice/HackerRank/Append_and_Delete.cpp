@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/append-and-delete/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

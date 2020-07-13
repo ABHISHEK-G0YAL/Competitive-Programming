@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/hackerrank-in-a-string/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/palindromic-patitioning/0
-// Correct
 
 using namespace std;
 int dp[1001][1001];

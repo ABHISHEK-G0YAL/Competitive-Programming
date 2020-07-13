@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

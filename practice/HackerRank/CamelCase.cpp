@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/camelcase/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

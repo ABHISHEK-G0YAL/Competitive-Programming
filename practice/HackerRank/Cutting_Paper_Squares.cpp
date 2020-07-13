@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/p1-paper-cutting/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/acm-icpc-team/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

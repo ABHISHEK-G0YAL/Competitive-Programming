@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/cpp-sets/problem
-// Accepted
 
 #include <cmath>
 #include <cstdio>

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

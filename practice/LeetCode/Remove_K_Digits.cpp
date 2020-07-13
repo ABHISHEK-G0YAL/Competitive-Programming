@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/remove-k-digits/
-// Accepted    20 ms
 
 class Solution {
     string helpRemoveKdigits(string &num, int k) {

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/migratory-birds/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

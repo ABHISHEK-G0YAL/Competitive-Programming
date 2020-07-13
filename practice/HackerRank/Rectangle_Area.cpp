@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/rectangle-area/problem
-// Accepted
 
 
 

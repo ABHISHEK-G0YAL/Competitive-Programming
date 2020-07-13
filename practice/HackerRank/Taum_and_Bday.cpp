@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/taum-and-bday/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define ll long long

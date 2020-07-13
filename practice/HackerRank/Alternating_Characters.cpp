@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/alternating-characters/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

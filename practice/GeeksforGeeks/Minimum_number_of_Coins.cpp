@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/-minimum-number-of-coins/0
-// Correct
 
 using namespace std;
 

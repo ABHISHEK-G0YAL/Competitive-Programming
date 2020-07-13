@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/abstract-classes-polymorphism/problem
-// Accepted
 
 
 #include <list>

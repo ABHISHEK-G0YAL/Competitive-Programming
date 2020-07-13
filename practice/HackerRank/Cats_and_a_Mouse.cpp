@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/cats-and-a-mouse/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

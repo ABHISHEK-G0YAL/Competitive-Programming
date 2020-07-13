@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/reverse-words-in-a-given-string/0
-// Correct
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,6 +1,6 @@
 // https://www.codechef.com/SNCK1B19/problems/SNCKYEAR/
-// By Bansal
 
+// By Bansal
 #include<iostream>
 using namespace std;
 int main()

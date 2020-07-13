@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/trapping-rain-water/
-// Accepted    8 ms
 
 class Solution {
 public:

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/handshake/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

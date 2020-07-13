@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/mars-exploration/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

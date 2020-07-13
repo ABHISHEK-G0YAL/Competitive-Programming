@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/non-divisible-subset/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

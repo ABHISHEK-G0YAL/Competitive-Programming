@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/magic-square-forming/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

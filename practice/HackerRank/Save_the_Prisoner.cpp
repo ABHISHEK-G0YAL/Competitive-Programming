@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/save-the-prisoner/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

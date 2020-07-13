@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/counting-valleys/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

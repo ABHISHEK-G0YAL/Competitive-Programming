@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/funny-string/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/30-conditional-statements/problem
-// Accepted
 
 #include <math.h>
 #include <stdio.h>

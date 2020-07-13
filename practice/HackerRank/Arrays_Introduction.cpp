@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/arrays-introduction/problem
-// Accepted
 
 #include<iostream>
 using namespace std;

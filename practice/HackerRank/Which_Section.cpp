@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/contests/w38/challenges/which-section/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/chocolate-feast/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

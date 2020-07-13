@@ -1,6 +1,6 @@
 // https://www.codechef.com/SNCK1B19/problems/QUEUE2/
-// By Bansal
 
+// By Bansal
 #include<bits/stdc++.h>
 using namespace std;
 int main()

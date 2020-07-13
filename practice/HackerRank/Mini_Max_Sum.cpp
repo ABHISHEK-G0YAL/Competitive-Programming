@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/mini-max-sum/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

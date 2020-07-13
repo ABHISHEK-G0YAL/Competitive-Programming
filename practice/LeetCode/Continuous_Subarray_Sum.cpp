@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/continuous-subarray-sum/
-// Accepted    36 ms
 
 class Solution {
 public:

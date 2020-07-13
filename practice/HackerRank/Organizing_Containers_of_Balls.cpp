@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define ll long long

@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/diameter-of-binary-tree/
-// Accepted    16 ms
 
 /*
 * Definition for a binary tree node.

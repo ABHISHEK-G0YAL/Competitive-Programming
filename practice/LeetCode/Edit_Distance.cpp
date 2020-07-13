@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/edit-distance/
-// Accepted    1340 ms
 
 class Solution {
 public:

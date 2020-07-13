@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/between-two-sets/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

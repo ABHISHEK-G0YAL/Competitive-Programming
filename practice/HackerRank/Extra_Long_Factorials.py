@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/extra-long-factorials/problem
-// Accepted
 
 #!/bin/python3
 

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/manasa-and-stones/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

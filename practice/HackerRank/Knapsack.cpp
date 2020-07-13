@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/unbounded-knapsack/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define MAX 2001

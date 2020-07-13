@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/staircase/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/compare-the-triplets/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

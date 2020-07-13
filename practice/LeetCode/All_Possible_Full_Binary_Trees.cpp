@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/all-possible-full-binary-trees/
-// Accepted    88 ms
 
 /**
  * Definition for a binary tree node.

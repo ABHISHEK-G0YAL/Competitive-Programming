@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/preprocessor-solution/problem
-// Accepted
 
 
 #define INF 1000000000

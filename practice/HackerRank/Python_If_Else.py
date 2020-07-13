@@ -1,5 +1,4 @@
-// https://www.hackerrank.com/challenges/py-if-else/problem
-// Accepted
+# https://www.hackerrank.com/challenges/py-if-else/problem
 
 N = int(input())
 if (N%2!=0) :

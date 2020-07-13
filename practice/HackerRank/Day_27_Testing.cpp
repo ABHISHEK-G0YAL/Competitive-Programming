@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/30-testing/problem
-// Accepted
 
 #include <cmath>
 #include <cstdio>

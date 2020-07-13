@@ -1,3 +1,5 @@
+// 
+
 #include <bits/stdc++.h>
 using namespace std;
 bool contains(string a,string b)

@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/valid-parentheses/
-// Accepted    0 ms
 
 class Solution {
 public:

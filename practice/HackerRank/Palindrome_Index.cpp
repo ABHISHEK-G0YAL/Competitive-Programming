@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/palindrome-index/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

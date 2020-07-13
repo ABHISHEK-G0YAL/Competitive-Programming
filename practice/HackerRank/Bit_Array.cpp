@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/bitset-1/problem
-// Accepted
 
 // my implementation could only get 32 points, and I am unable to understand this one
 #include <algorithm>

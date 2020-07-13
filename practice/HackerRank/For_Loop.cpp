@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/c-tutorial-for-loop/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

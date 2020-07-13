@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/day-of-the-programmer/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/string-construction/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

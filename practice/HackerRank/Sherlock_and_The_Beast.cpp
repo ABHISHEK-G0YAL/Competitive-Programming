@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/sherlock-and-the-beast/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

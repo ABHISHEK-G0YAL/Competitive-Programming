@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/grid-challenge/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/longest-palindrome-in-a-string/0
-// Correct
 
 #include <bits/stdc++.h>
 using namespace std;

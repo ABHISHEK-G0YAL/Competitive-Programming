@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/maximum-product-subarray/
-// Accepted    8 ms
 
 class Solution {
 public:

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/insertionsort1/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

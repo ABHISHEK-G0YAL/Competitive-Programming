@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/overload-operators/problem
-// Accepted
 
 
 Complex operator + (Complex &x, Complex &y) {

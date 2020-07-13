@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/c-tutorial-basic-data-types/problem
-// Accepted
 
 #include <iostream>
 #include <cstdio>

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/the-hurdle-race/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

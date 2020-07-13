@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/attribute-parser/problem
-// Accepted
 
 #include<bits/stdc++.h>
 #include <bits/stdc++.h>

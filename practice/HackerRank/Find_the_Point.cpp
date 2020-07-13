@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/find-point/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

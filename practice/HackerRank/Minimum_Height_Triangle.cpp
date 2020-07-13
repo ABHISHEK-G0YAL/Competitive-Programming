@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/lowest-triangle/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

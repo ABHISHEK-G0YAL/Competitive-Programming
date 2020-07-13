@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/minimum-distances/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define MAX 100005

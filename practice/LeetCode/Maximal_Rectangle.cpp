@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/maximal-rectangle/
-// Accepted    112 ms
 
 class Solution {
 public:

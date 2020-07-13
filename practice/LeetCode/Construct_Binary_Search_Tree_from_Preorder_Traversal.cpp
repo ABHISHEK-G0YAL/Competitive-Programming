@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
-// Accepted    8 ms
 
 /**
  * Definition for a binary tree node.

@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/wildcard-matching/
-// Accepted    20 ms
 
 class Solution {
 public:

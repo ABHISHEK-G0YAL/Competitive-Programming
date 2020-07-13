@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/countingsort4/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define pb push_back

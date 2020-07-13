@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/c-tutorial-pointer/problem
-// Accepted
 
 #include <stdio.h>
 void abs(int *b) {

@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/longest-univalue-path/
-// Accepted    156 ms
 
 /**
  * Definition for a binary tree node.

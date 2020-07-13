@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/cpp-maps/problem
-// Accepted
 
 #include <cmath>
 #include <cstdio>

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/absolute-permutation/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

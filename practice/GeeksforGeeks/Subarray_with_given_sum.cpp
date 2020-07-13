@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/subarray-with-given-sum/0
-// Correct
 
 #include<vector>
 using namespace std;

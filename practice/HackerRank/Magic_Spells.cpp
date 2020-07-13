@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/magic-spells/problem
-// Accepted
 
 
     if(typeid(*spell) == typeid(Fireball)) {

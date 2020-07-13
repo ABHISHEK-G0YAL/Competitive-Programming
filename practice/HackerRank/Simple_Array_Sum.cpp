@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/simple-array-sum/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

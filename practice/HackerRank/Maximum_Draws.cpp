@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/maximum-draws/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

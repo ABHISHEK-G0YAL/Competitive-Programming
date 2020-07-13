@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/c-tutorial-class/problem
-// Accepted
 
 #include <iostream>
 #include <sstream>

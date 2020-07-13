@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/two-characters/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

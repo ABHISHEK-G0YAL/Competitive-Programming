@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/find-digits/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

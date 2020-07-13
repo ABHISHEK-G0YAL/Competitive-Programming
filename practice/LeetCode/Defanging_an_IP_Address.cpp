@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/defanging-an-ip-address/
-// Accepted    0 ms
 
 class Solution {
 public:

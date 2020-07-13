@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/largest-rectangle-in-histogram/
-// Accepted    24 ms
 
 class Solution {
 public:

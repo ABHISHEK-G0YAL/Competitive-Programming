@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/contests/w36/challenges/acid-naming/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

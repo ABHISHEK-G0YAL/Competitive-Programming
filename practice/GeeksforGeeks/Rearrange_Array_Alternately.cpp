@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/-rearrange-array-alternately/0
-// Correct
 
 using namespace std;
 int main() {

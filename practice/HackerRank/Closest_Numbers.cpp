@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/closest-numbers/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

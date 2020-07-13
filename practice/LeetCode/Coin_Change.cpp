@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/coin-change/
-// Accepted    124 ms
 
 class Solution {
 public:

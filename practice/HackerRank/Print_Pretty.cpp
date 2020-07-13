@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/prettyprint/problem
-// Accepted
 
 
         cout<<nouppercase<<setw(0)<<showbase;

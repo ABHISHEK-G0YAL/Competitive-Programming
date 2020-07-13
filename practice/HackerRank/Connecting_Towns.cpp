@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/connecting-towns/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define mod 1234567

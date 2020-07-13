@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/tutorial-intro/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

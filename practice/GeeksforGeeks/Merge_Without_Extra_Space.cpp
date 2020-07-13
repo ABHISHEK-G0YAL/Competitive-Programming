@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays/0
-// Correct
 
 using namespace std;
 int main() {

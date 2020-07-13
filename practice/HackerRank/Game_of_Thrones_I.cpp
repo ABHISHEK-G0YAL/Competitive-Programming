@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/game-of-thrones/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

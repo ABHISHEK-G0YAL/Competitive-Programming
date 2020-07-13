@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/big-sorting/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

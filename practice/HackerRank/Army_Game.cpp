@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/game-with-cells/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/mandragora/problem
-// Accepted
 
 #include <bits/stdc++.h>
 #define ll long long

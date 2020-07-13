@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/jim-and-the-orders/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

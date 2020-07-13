@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/number-of-squareful-arrays/
-// Accepted    0 ms
 
 class Solution {
 public:

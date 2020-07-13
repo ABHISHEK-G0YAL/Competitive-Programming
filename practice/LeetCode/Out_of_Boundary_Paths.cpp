@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/out-of-boundary-paths/
-// Accepted    136 ms
 
 class def_long {
     public:

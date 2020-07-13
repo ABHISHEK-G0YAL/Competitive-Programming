@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/encryption/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

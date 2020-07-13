@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/mark-and-toys/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

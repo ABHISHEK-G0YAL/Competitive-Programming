@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/halloween-sale/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

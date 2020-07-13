@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/cut-the-sticks/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

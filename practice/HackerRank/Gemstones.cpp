@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/gem-stones/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

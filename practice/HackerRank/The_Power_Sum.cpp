@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/the-power-sum/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

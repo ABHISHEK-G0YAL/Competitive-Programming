@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/reorder-data-in-log-files/
-// Accepted    24 ms
 
 class Solution {
 public:

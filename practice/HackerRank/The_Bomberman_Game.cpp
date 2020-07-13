@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/bomber-man/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

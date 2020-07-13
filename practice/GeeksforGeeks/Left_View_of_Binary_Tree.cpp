@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1
-// Correct
 
 #include <bits/stdc++.h>
 using namespace std;

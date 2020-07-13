@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/4sum/
-// Accepted    1276 ms    O(n^3logn)
 
 class Solution {
 public:

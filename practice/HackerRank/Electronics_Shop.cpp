@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/electronics-shop/problem
-// Accepted
 
 #include <bits/stdc++.h>
 

@@ -1,5 +1,4 @@
 // https://practice.geeksforgeeks.org/problems/print-bst-elements-in-given-range/1
-// Correct
 
 #include <bits/stdc++.h>
 using namespace std;

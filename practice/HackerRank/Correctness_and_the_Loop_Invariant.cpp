@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/correctness-invariant/problem
-// Accepted
 
 #include <stdio.h>
 #include <string.h>

@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/new-year-chaos/problem
-// Accepted
 
 #include <bits/stdc++.h>
 using namespace std;

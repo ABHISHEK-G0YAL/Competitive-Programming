@@ -1,6 +1,6 @@
 // https://www.codechef.com/SNCK1A19/problems/TYPING/
-// By Bansal
 
+// By Bansal
 #include<bits/stdc++.h>
 using namespace std;
 int main()

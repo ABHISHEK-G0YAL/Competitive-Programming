@@ -1,5 +1,4 @@
 // https://www.hackerrank.com/challenges/cavity-map/problem
-// Accepted
 
 #include <bits/stdc++.h>
 
