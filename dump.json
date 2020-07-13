@@ -434,6 +434,9 @@
     "// incomplete code\n": [
         ".\\contests\\Facebook-Hacker-Cup_2019\\Round_1\\connectTheDots.cpp"
     ],
+    "// wrong answer\n": [
+        ".\\contests\\SnackDown_2019\\Online-Pre-Elimination\\practice\\CHQUEENS.cpp"
+    ],
     "// partial points (50pts)\n": [
         ".\\contests\\SnackDown_2019\\Online-Round-1A\\AVGMAT.cpp",
         ".\\contests\\SnackDown_2019\\Online-Round-1A\\CHEFADD.cpp",
