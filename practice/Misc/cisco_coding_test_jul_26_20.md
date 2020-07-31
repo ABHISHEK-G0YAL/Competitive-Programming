@@ -33,10 +33,6 @@ Output the number of employees in that slot and for the complete duration of tha
 ### **Sample Explanation 1:**
 Only employee 'A' and 'B' was present in the campus for the complete slot.
 
-` `  
-` `  
-` `  
-` `  
 
 # Solution
 

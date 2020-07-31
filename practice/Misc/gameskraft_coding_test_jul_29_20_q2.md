@@ -72,11 +72,6 @@ The calls happen in the intervals\
 The first and third calls together make up the order volume 4, and their intervals do not intersect.\
 The first and second calls intersect, as do the second and third calls. Only one call from either of these pairs can be serviced. The most efficient calls to answer are the first and third with a total volume of 4.
 
-` `  
-` `  
-` `  
-` `  
-` `  
 
 # Solution
 ### **C++ [ recursion + memoisation ] O(n²)**
