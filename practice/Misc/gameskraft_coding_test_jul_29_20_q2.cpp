@@ -1,3 +1,5 @@
+// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/practice/Misc/gameskraft_coding_test_jul_29_20_q2.md
+
 bool cmp_customer_by_end(customer c1, customer c2) {
     return c1.end <= c2.end;
 }
