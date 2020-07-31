@@ -1,4 +1,5 @@
 # Rubrik Intern Test Q10 - Aug 6, 2019
+
 The Super Cluster of Rubrik has N clusters and each cluster is represented by a number describing the total number of nodes in that cluster, which is also called degree of cluster. The degree of any cluster ranges from 0-9. However, the degree of some clusters are unknown and are represented by ?. A Super Cluster is said to be in a healthy state if the following property holds good. X % 13 = 5 where, X is the number formed by combining degrees of all clusters in the sequential order. Find the total number of possible combinations where Rubrik's Super Cluster is in a healthy state.
 
 Since the answer can be enormous, print the count modulo 10^9 + 7

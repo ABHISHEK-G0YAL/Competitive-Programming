@@ -1,37 +1,4 @@
-// # Pattern: Closed Box
-
-// #### Print the given pattern for the given number of rows.
-
-// ##### Pattern for N=4
-
-//     ####
-//     *  *
-//     *  *
-//     ####
-
-// ##### Input format:
-
-//     N (Total number of rows).
-
-// #### Constraints:
-
-//     N lies between [3,40]
-
-// ##### Output format:
-
-//     Pattern in N lines
-
-// ##### Sample Input 1:
-
-//     5
-
-// ##### Sample Output 1:
-
-//     #####
-//     *   *
-//     *   *
-//     *   *
-//     #####
+// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/practice/Coding_Ninjas/Pattern_Closed_Box.md
 
 #include<bits/stdc++.h>
 using namespace std;
