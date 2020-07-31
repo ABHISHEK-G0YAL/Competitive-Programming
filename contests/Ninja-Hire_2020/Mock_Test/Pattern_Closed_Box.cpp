@@ -1,4 +1,4 @@
-// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/practice/Coding_Ninjas/Pattern_Closed_Box.md
+// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/contests/Ninja-Hire_2020/Mock_Test/Pattern_Closed_Box.md
 
 #include<bits/stdc++.h>
 using namespace std;

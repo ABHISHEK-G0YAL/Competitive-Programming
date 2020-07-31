@@ -1,4 +1,4 @@
-// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/practice/Coding_Ninjas/Single_character.md
+// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/contests/Ninja-Hire_2020/Round_2_Test/Single_character.md
 
 #include<bits/stdc++.h>
 using namespace std;

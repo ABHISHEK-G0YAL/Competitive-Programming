@@ -1,4 +1,4 @@
-// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/practice/Coding_Ninjas/F7_Championship.md
+// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/contests/Ninja-Hire_2020/Round_2_Test/Modified_sum.md
 
 #include<bits/stdc++.h>
 using namespace std;

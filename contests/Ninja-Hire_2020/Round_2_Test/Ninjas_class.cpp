@@ -1,4 +1,4 @@
-// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/practice/Coding_Ninjas/Ninjas_class.md
+// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/contests/Ninja-Hire_2020/Round_2_Test/Ninjas_class.md
 
 #include<bits/stdc++.h>
 #define ll long long 

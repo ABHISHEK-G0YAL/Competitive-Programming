@@ -1,4 +1,4 @@
-// ./Split_array.md
+// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/contests/Ninja-Hire_2020/Round_3_Test/Split_array.md
 
 #include<bits/stdc++.h>
 using namespace std;

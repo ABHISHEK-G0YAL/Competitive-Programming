@@ -7,32 +7,26 @@
 ### Write a program to calculate, based on the total number of points that each driver has earned before the final race, how many drivers still have a chance to have the largest total after the final race and thus win the Championship. If more than one driver has the same maximum point total, they are all awarded the World Champion title
 
 #### Input Format:
-
     The first line of input contains the positive integer N, the number of drivers participating in the Championship.
     Each of the following N lines contains a single integer Bi, the number of points that a driver has before the final race.
 
 #### Constraints:
-
     3 ≤ N ≤ 300000
     0 ≤ Bi ≤ 2000000 (i = 1, ..., N)
 
 #### Output Format:
-
     The first and only line of output should contain the requested number of drivers that can still win
 
 #### Sample Input 1:
-
     3
     8
     10
     9 
 
 #### Sample Output 1:
-
     3
 
 #### Sample Input 2:
-
     5
     15
     14
@@ -41,11 +35,9 @@
     14
 
 #### Sample Output 2:
-
     4
 
 # Solution
-
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
