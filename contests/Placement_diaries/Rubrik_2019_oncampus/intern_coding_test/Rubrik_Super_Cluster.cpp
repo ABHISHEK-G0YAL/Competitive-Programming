@@ -1,4 +1,4 @@
-// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/practice/Misc/rubrik_intern_test_q10_aug_06_19.md
+// https://github.com/ABHISHEK-G0YAL/Competitive-Programming/blob/master/practice/Misc/Rubrik_Super_Cluster.md
 
 #include <iostream>
 #include <vector>
