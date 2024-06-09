@@ -3,33 +3,17 @@
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
-        long allProduct = 1;
-        int zeroCount = 0;
-        for (int &num : nums) {
-            if (num != 0) {
-                allProduct *= num;
-            } else {
-                ++zeroCount;
-            }
+        int n = nums.size();
+        vector<int> prefix(n, 1), suffix(n, 1), ans(n);
+        for (int i = 0; i < n - 1; i++) {
+            prefix[i + 1] = nums[i] * prefix[i];
         }
-        vector<int> solution;
-        if (zeroCount == 0) {
-            for (int &num : nums) {
-                solution.push_back(allProduct / num);
-            }
-        } else if (zeroCount == 1) {
-            for (int &num : nums) {
-                if (num == 0) {
-                    solution.push_back(allProduct);
-                } else {
-                    solution.push_back(0);
-                }
-            }
-        } else {
-            for (int &num : nums) {
-                solution.push_back(0);
-            }
+        for (int i = n - 1; i > 0; i--) {
+            suffix[i - 1] = nums[i] * suffix[i];
         }
-        return solution;
+        for (int i = 0; i < n; i++) {
+            ans[i] = prefix[i] * suffix[i];
+        }
+        return ans;
     }
 };
