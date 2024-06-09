@@ -3,16 +3,15 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        int n = nums.size();
-        unordered_map<int, vector<int> > freq;
-        for(int i = 0; i < n; i++)
-            freq[nums[i]].push_back(i);
-        for(int i = 0; i < n; i++) {
-            int to_find = target - nums[i];
-            if(to_find != nums[i] and !freq[to_find].empty())
-                return {i, freq[to_find][0]};
-            if(to_find == nums[i] and freq[to_find].size() > 1)
-                return {i, freq[to_find][1]};
-        } return {};
+        unordered_map<int, int> indice_map;
+        for (int i = 0; i < nums.size(); i++) {
+            // candidate index
+            int c_i = indice_map[target - nums[i]];
+            if (c_i) {
+                return {c_i - 1, i};
+            }
+            indice_map[nums[i]] = i + 1;
+        }
+        return {};
     }
 };
