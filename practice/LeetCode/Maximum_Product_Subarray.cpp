@@ -3,10 +3,10 @@
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-        int maxp = INT_MIN, p = 1, fnp = 1, flag = 0;
+        double maxp = INT_MIN, p = 1, fnp = 1, flag = 0;
         for(int i = 0; i < nums.size(); i++) {
             if(nums[i] == 0) {
-                maxp = max(maxp, 0);
+                maxp = max(maxp, (double)0);
                 if(flag)
                     maxp = max(maxp, p / fnp);
                 p = 1;
