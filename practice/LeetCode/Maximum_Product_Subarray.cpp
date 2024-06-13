@@ -3,28 +3,22 @@
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-        int l = 0, r = 0, n = nums.size();
+        const int n = nums.size();
         double product = 1, maxProduct = INT_MIN;
-        while (r < n) {
-            if (nums[r] == 0) {
-                while (l < r - 1) {
-                    product /= nums[l];
-                    maxProduct = max(product, maxProduct);
-                    ++l;
-                }
-                l = r + 1;
-            }
-            product *= nums[r];
+        for(int i = 0; i < n; i++) {
+            product *= nums[i];
             maxProduct = max(product, maxProduct);
             if (product == 0) {
                 product = 1;
             }
-            ++r;
         }
-        while (l < r - 1) {
-            product /= nums[l];
+        product = 1;
+        for(int i = n - 1; i >= 0; i--) {
+            product *= nums[i];
             maxProduct = max(product, maxProduct);
-            ++l;
+            if (product == 0) {
+                product = 1;
+            }
         }
         return maxProduct;
     }
