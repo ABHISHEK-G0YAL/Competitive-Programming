@@ -1,20 +1,16 @@
 // https://leetcode.com/problems/maximum-product-subarray/
+// https://www.youtube.com/watch?v=lXVy6YWFcRM
 
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
         const int n = nums.size();
-        double product1 = 1, product2 = 1, maxProduct = INT_MIN;
+        double currMax = 1, currMin = 1, maxProduct = INT_MIN, newMax;
         for(int i = 0; i < n; i++) {
-            product1 *= nums[i];
-            product2 *= nums[n - 1 - i];
-            maxProduct = max({product1, product2, maxProduct});
-            if (product1 == 0) {
-                product1 = 1;
-            }
-            if (product2 == 0) {
-                product2 = 1;
-            }
+            newMax = max({currMax * nums[i], currMin * nums[i], double(nums[i])});
+            currMin = min({currMax * nums[i], currMin * nums[i], double(nums[i])});
+            currMax = newMax;
+            maxProduct = max(currMax, maxProduct);
         }
         return maxProduct;
     }
