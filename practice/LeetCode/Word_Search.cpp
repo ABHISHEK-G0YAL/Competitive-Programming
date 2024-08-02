@@ -2,7 +2,8 @@
 
 class Solution {
 public:
-    bool exist(vector<vector<char>>& board, string word, int i = 0, int j = 0, bool start = true) {
+    vector<vector<char>> board;
+    bool searchFrom(string word, int i, int j) {
         int n = board.size(), m = board[0].size();
         if (word.length() == 0)
             return true;
@@ -10,31 +11,28 @@ public:
             return false;
         }
         bool ans = false;
-        if (start) {
-            for (int i = 0 ; i < n; i++) {
-                for (int j = 0; j < m; j++) {
-                    if (board[i][j] == word[0]) {
-                        char c = board[i][j];
-                        board[i][j] = '*';
-                        ans = ans || exist(board, word.substr(1), i + 1, j, false);
-                        ans = ans || exist(board, word.substr(1), i - 1, j, false);
-                        ans = ans || exist(board, word.substr(1), i, j + 1, false);
-                        ans = ans || exist(board, word.substr(1), i, j - 1, false);
-                        board[i][j] = c;
-                    }
-                }
-            }
-            return ans;
-        }
         if (board[i][j] == word[0]) {
             char c = board[i][j];
             board[i][j] = '*';
-            ans = ans || exist(board, word.substr(1), i + 1, j, false);
-            ans = ans || exist(board, word.substr(1), i - 1, j, false);
-            ans = ans || exist(board, word.substr(1), i, j + 1, false);
-            ans = ans || exist(board, word.substr(1), i, j - 1, false);
+            ans = ans || searchFrom(word.substr(1), i + 1, j);
+            ans = ans || searchFrom(word.substr(1), i - 1, j);
+            ans = ans || searchFrom(word.substr(1), i, j + 1);
+            ans = ans || searchFrom(word.substr(1), i, j - 1);
             board[i][j] = c;
         }
         return ans;
+    }
+
+    bool exist(vector<vector<char>>& board, string word) {
+        this->board = board;
+        int n = board.size(), m = board[0].size();
+        for (int i = 0 ; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (searchFrom(word, i, j)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 };
