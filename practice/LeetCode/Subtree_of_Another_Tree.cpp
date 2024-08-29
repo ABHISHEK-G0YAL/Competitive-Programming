@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/subtree-of-another-tree/
-
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -23,7 +21,8 @@ public:
             && isEqual(root1->right, root2->right);
     }
 
-    bool isSubtree(TreeNode *root, TreeNode *subRoot) {
+    // O(N x M)
+    bool isSubtree1(TreeNode *root, TreeNode *subRoot) {
         if (root == subRoot)
             return true;
         if (!root)
@@ -31,6 +30,29 @@ public:
         return isEqual(root, subRoot)
             || isSubtree(root->left, subRoot)
             || isSubtree(root->right, subRoot);
-        
+    }
+
+    // O(N) using reference string
+    // becomes O(N^2) if returning and concatenating string recursively
+    void seralize(TreeNode *root, string &s) {
+        if (!root) {
+            s += " #";
+            return;
+        }
+        s += " " + to_string(root->val);
+        seralize(root->left, s);
+        seralize(root->right, s);
+    }
+
+    // O(N + M)
+    bool isSubtree2(TreeNode *root, TreeNode *subRoot) {
+        string tree, subTree;
+        seralize(root, tree);
+        seralize(subRoot, subTree);
+        return tree.find(subTree) < tree.size();
+    }
+
+    bool isSubtree(TreeNode *root, TreeNode *subRoot) {
+        return isSubtree2(root, subRoot);
     }
 };
