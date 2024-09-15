@@ -13,22 +13,13 @@
  */
 class Solution {
 public:
-    long currentMax = LONG_MIN;
-    bool isBST = true;
-
-    void inOrder(TreeNode* root) {
-        if (!root) return;
-        inOrder(root->left);
-        if (root->val > currentMax) {
-            currentMax = root->val;
-        } else {
-            isBST = false;
+    bool isValidBST(TreeNode* root, long upper = LLONG_MAX, long lower = LLONG_MIN) {
+        if(!root) {
+            return true;
         }
-        inOrder(root->right);
-    }
-
-    bool isValidBST(TreeNode* root) {
-        inOrder(root);
-        return isBST;
+        if (root->val >= upper || root->val <= lower) {
+            return false;
+        }
+        return isValidBST(root->left, root->val, lower) && isValidBST(root->right, upper, root->val);
     }
 };
