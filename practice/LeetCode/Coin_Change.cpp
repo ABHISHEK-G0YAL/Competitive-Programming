@@ -2,37 +2,33 @@
 
 class Solution {
 public:
-    long coinChangeHelper(vector<int>& coins, int amount, int i = 0) {
+    long coinChangeHelper(vector<int>& coins, int amount) {
+        // if (amount < 0) {
+        //     return INT_MAX;
+        // }
         // if (amount == 0) {
         //     return 0;
         // }
-        // if (i == coins.size()) {
-        //     return INT_MAX;
+        // long minCoins = INT_MAX;
+        // for (int coin : coins) {
+        //     minCoins = min(minCoins, coinChangeHelper(coins, amount - coin));
         // }
-        // if (coins[i] <= amount) {
-        //     return min(
-        //         1 + coinChangeHelper(coins, amount - coins[i], i)
-        //         , coinChangeHelper(coins, amount, i + 1)
-        //     );
-        // }
-        // return coinChangeHelper(coins, amount, i + 1);
+        // return 1 + minCoins;
 
-        vector<vector<long>> dp(amount + 1, vector<long> (coins.size() + 1, INT_MAX));
-        dp[0] = vector<long> (coins.size() + 1, 0);
+        vector<long> dp(amount + 1, INT_MAX);
+        dp[0] = 0;
         for (int am = 1; am <= amount; am++) {
-            for (int i = coins.size() - 1; i >= 0; i--) {
-                if (coins[i] <= am) {
-                    dp[am][i] = min(1 + dp[am - coins[i]][i], dp[am][i + 1]);
-                } else {
-                    dp[am][i] = dp[am][i + 1];
+            for (int coin : coins) {
+                if (am - coin >= 0) {
+                    dp[am] = min(dp[am], 1 + dp[am - coin]);
                 }
             }
         }
-        return dp[amount][0];
+        return dp[amount];
     }
 
     int coinChange(vector<int>& coins, int amount) {
-        int minCoins = coinChangeHelper(coins, amount);
+        long minCoins = coinChangeHelper(coins, amount);
         return minCoins < INT_MAX ? minCoins : -1;
     }
 };
