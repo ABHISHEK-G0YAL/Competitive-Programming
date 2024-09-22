@@ -7,14 +7,13 @@ public:
         if (!node) {
             return NULL;
         }
-        Node* newNode = !visited[node] ? new Node(node->val) : visited[node];
-        visited[node] = newNode;
-        for (Node* neighbor : node->neighbors) {
-            if (!visited[neighbor]) {
-                visited[neighbor] = cloneGraph(neighbor);
+        if (!visited[node]) {
+            Node* newNode = new Node(node->val);
+            visited[node] = newNode;
+            for (Node* neighbor : node->neighbors) {
+                newNode->neighbors.push_back(cloneGraph(neighbor));
             }
-            newNode->neighbors.push_back(visited[neighbor]);
         }
-        return newNode;
+        return visited[node];
     }
 };
