@@ -44,7 +44,8 @@ public:
             ++inDegree[course];
         }
         queue<int> q;
-        vector<int> topoSort;
+        // vector<int> topoSort;
+        int topoSortSize = 0;
         for (int course = 0; course < numCourses; course++) {
             if (inDegree[course] == 0) {
                 q.push(course);
@@ -52,8 +53,9 @@ public:
         }
         while (!q.empty()) {
             int course = q.front();
+            // topoSort.push_back(course);
+            ++topoSortSize;
             q.pop();
-            topoSort.push_back(course);
             for (int &dc : depList[course]) {
                 --inDegree[dc];
                 if (inDegree[dc] == 0) {
@@ -61,7 +63,8 @@ public:
                 }
             }
         }
-        return topoSort.size() == numCourses;
+        // return topoSort.size() == numCourses;
+        return topoSortSize == numCourses;
     }
 
 
