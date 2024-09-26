@@ -19,7 +19,7 @@ public:
         return false;
     }
 
-    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+    bool canFinishDFS(int numCourses, vector<vector<int>>& prerequisites) {
         vector<vector<int>> depList(numCourses);
         for (auto &pair : prerequisites) {
             auto [course, prerequisite] = tie(pair[0], pair[1]);
@@ -33,5 +33,39 @@ public:
             }
         }
         return true;
+    }
+
+    bool canFinishBFS(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<vector<int>> depList(numCourses);
+        vector<int> inDegree(numCourses);
+        for (auto &pair : prerequisites) {
+            auto [course, prerequisite] = tie(pair[0], pair[1]);
+            depList[prerequisite].push_back(course);
+            ++inDegree[course];
+        }
+        queue<int> q;
+        vector<int> topoSort;
+        for (int course = 0; course < numCourses; course++) {
+            if (inDegree[course] == 0) {
+                q.push(course);
+            }
+        }
+        while (!q.empty()) {
+            int course = q.front();
+            q.pop();
+            topoSort.push_back(course);
+            for (int &dc : depList[course]) {
+                --inDegree[dc];
+                if (inDegree[dc] == 0) {
+                    q.push(dc);
+                }
+            }
+        }
+        return topoSort.size() == numCourses;
+    }
+
+
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        return canFinishBFS(numCourses, prerequisites);
     }
 };
