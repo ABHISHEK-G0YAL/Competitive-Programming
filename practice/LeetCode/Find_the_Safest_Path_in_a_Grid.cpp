@@ -198,11 +198,51 @@ public:
     }
 };
 
+class SolutionD {
+public:
+    static int getMaxMinDistPqBFS(vector<vector<int>> &grid) {
+        int n = grid.size();
+        priority_queue<tuple<int, int, int>> pq;
+        vector<pair<int, int>> direction = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+        vector<vector<bool>> visited(n, vector<bool>(n, false));
+        pq.push({grid[0][0], 0, 0});
+        visited[0][0] = true;
+        int maxDist = grid[0][0];
+        while(!pq.empty()) {
+            auto [dist, i, j] = pq.top();
+            pq.pop();
+            maxDist = min(maxDist, dist);
+            if (i == n - 1 && j == n - 1) {
+                return maxDist;
+            }
+            for (auto[di, dj] : direction) {
+                int ni = i + di, nj = j + dj;
+                if (ni >= 0 && nj >= 0 && ni < n && nj < n && !visited[ni][nj]) {
+                    pq.push({grid[ni][nj], ni, nj});
+                    visited[ni][nj] = true;
+                }
+            }
+        }
+        return -1;
+    }
+
+    static int maximumSafenessFactor(vector<vector<int>>& grid) {
+        int n = grid.size();
+
+        // Multi source BFS
+        SolutionA::fillDistance(grid);
+
+        // BFS with Priority - AC (Beats 58.88%)
+        return getMaxMinDistPqBFS(grid);
+    }
+};
+
 class Solution {
 public:
     int maximumSafenessFactor(vector<vector<int>>& grid) {
         // return SolutionA::maximumSafenessFactor(grid);
         // return SolutionB::maximumSafenessFactor(grid);
-        return SolutionC::maximumSafenessFactor(grid);
+        // return SolutionC::maximumSafenessFactor(grid);
+        return SolutionD::maximumSafenessFactor(grid);
     }
 };
