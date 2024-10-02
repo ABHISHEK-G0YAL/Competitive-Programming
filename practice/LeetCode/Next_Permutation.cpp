@@ -12,13 +12,24 @@ public:
                     --j;
                 }
                 swap(nums[i], nums[j]);
-                sort(nums.begin() + i + 1, nums.end());
+
+                // // O(nlog(n))
+                // sort(nums.begin() + i + 1, nums.end());
+
+                // O(n)
+                // Reverse instead of sorting, as it's already in reverse order
+                reverse(nums.begin() + i + 1, nums.end());
                 break;
             }
             --i;
         }
         if (i < 0) {
-            sort(nums.begin(), nums.end());
+            // // O(nlog(n))
+            // sort(nums.begin(), nums.end());
+
+            // O(n)
+            // Reverse instead of sorting, as it's already in reverse order
+            reverse(nums.begin() + i + 1, nums.end());
         }
     }
 };
