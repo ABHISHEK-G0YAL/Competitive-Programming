@@ -1,3 +1,6 @@
+// https://leetcode.com/problems/find-the-safest-path-in-a-grid/
+
+// O(4 ^ n)
 class SolutionA {
 public:
     static int getMaxMinDistBacktracking(vector<vector<int>> &grid, int i, int j, vector<vector<bool>> &visited) {
@@ -73,6 +76,7 @@ public:
     }
 };
 
+// O(n^2 log n)
 class SolutionB {
 public:
     static bool checkMinDistPossibleDfs(vector<vector<int>> &grid, int i, int j, vector<vector<bool>> &visited, int minDist) {
@@ -148,6 +152,7 @@ public:
     }
 };
 
+// O(n^2 log n)
 class SolutionC {
 public:
     static bool checkMinDistPossibleBfs(vector<vector<int>> &grid, int minDist) {
@@ -198,6 +203,7 @@ public:
     }
 };
 
+// O(n^2 log n)
 class SolutionD {
 public:
     static int getMaxMinDistPqBFS(vector<vector<int>> &grid) {
@@ -237,6 +243,7 @@ public:
     }
 };
 
+// O (n^3)
 // DFS in BFS (slow) - TLE (1029 / 1036 testcases passed)
 class SolutionE {
 public:
@@ -296,6 +303,16 @@ public:
 
         return safeDist;
     }
+};
+
+// TODO: Solve using union find
+class SolutionF {
+
+};
+
+// TODO: Solve using DP
+class SolutionG {
+
 };
 
 class Solution {
