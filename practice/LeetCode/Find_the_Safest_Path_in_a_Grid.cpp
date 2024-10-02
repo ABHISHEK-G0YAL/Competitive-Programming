@@ -237,6 +237,67 @@ public:
     }
 };
 
+// DFS in BFS (slow) - TLE (1029 / 1036 testcases passed)
+class SolutionE {
+public:
+    static bool dfs(vector<vector<int>> &grid, vector<vector<bool>> &visited, int i = 0, int j = 0) {
+        int n = grid.size();
+        if (i < 0 || j < 0 || i == n || j == n || visited[i][j] || grid[i][j] == 1) {
+            return false;
+        }
+        if (i == n - 1 && j == n - 1) {
+            return true;
+        }
+        visited[i][j] = true;
+        return dfs(grid, visited, i + 1, j) ||
+            dfs(grid, visited, i - 1, j) ||
+            dfs(grid, visited, i, j + 1) ||
+            dfs(grid, visited, i, j - 1);
+    } 
+
+    static void spreadDanger(vector<vector<int>> &grid) {
+        int n = grid.size();
+        queue<pair<int, int>> q;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 1) {
+                    q.push({i, j});
+                }
+            }
+        }
+        vector<pair<int,int>> direction = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        while (!q.empty()) {
+            int q_size = q.size();
+            while (q_size--) {
+                auto [i, j] = q.front();
+                q.pop();
+                for (auto [di, dj] : direction) {
+                    int io = i + di, jo = j + dj;
+                    if (io >= 0 && io < n && jo >= 0 && jo < n && !grid[io][jo]) {
+                        grid[io][jo] = 1;
+                        q.push({io, jo});
+                    }
+                }
+            }
+            return;
+        }
+    }
+
+    static int maximumSafenessFactor(vector<vector<int>>& grid) {
+        int n = grid.size();
+        int safeDist = 0;
+
+        vector<vector<bool>> visited(n, vector<bool>(n, false));
+        while (dfs(grid, visited)) {
+            spreadDanger(grid);
+            ++safeDist;
+            visited = vector<vector<bool>>(n, vector<bool>(n, false));
+        }
+
+        return safeDist;
+    }
+};
+
 class Solution {
 public:
     int maximumSafenessFactor(vector<vector<int>>& grid) {
@@ -244,5 +305,6 @@ public:
         // return SolutionB::maximumSafenessFactor(grid);
         // return SolutionC::maximumSafenessFactor(grid);
         return SolutionD::maximumSafenessFactor(grid);
+        // return SolutionE::maximumSafenessFactor(grid);
     }
 };
