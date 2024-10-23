@@ -14,7 +14,7 @@ class Solution {
     TreeNode* P_FOUND = new TreeNode();
     TreeNode* Q_FOUND = new TreeNode();
 public:
-    // Optimised using BST properties
+    // Optimised using BST properties | 18 ms Beats 91.04% O(Log N)
     TreeNode* lowestCommonAncestor3(TreeNode* root, TreeNode* p, TreeNode* q) {
         if (!root) return nullptr;
         
@@ -32,7 +32,7 @@ public:
         return root;
     }
 
-    // 21 ms Beats 73.08%
+    // 21 ms Beats 73.08% O(N)
     TreeNode* lowestCommonAncestor2(TreeNode* root, TreeNode* p, TreeNode* q) {
         if (!root || root == p || root == q) {
             return root;
@@ -45,7 +45,7 @@ public:
         return leftLca ? leftLca : rightLca;
     }
 
-    // 23 ms Beats 56.76%
+    // 23 ms Beats 56.76% O(N)
     TreeNode* lowestCommonAncestor1(TreeNode* root, TreeNode* p, TreeNode* q) {
         if (!root) {
             return NULL;
