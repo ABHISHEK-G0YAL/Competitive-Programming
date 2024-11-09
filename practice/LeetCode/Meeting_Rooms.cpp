@@ -1,5 +1,5 @@
-// https://www.lintcode.com/problem/920/
 // https://leetcode.com/problems/meeting-rooms/
+// https://www.lintcode.com/problem/920/
 
 /**
  * Definition of Interval:
