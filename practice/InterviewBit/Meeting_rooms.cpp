@@ -6,10 +6,8 @@ int Solution::solve(vector<vector<int> > &intervals) {
     for (auto &currentMeeting : intervals) {
         if (!ongoingMeetings.empty() && ongoingMeetings.top() <= currentMeeting[0]) {
             ongoingMeetings.pop();
-            ongoingMeetings.push(currentMeeting[1]);
-        } else {
-            ongoingMeetings.push(currentMeeting[1]);
         }
+        ongoingMeetings.push(currentMeeting[1]);
     }
     return ongoingMeetings.size();
 }
