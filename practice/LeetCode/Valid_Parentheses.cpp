@@ -2,21 +2,25 @@
 
 class Solution {
 public:
-    unordered_map<char, char> mp = {
-        {')', '('},
-        {'}', '{'},
-        {']', '['}
-    };
     bool isValid(string s) {
+        string openingBrackets = "{[(";
+        unordered_map<char, char> mp = {
+            {']', '['},
+            {'}', '{'},
+            {')', '('}
+        };
         stack<char> st;
-        for(char &c : s) {
-            if(c == '(' or c == '[' or c == '{')
+        for (char c : s) {
+            if (openingBrackets.find(c) != string::npos) {
                 st.push(c);
-            else if(!st.empty() and st.top() == mp[c])
-                st.pop();
-            else
-                return false;
+            } else {
+                if (!st.empty() && st.top() == mp[c]) {
+                    st.pop();
+                } else {
+                    return false;
+                }
+            }
         }
-        return st.empty() ? true : false;
+        return st.empty();
     }
 };
