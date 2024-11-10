@@ -3,12 +3,6 @@
 
 class Solution {
 public:
-    /**
-     * @param n: An integer
-     * @param edges: a list of undirected edges
-     * @return: true if it's a valid tree, or false
-     */
-
     void dfs(vector<vector<int>> &adj, vector<bool> &visited, int v) {
         visited[v] = true;
         for (auto u : adj[v]) {
@@ -18,6 +12,11 @@ public:
         }
     }
 
+    /**
+     * @param n: An integer
+     * @param edges: a list of undirected edges
+     * @return: true if it's a valid tree, or false
+     */
     bool validTree(int n, vector<vector<int>> &edges) {
         if (edges.size() != n - 1) {
             return false;
