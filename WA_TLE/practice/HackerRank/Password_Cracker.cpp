@@ -1,65 +1,44 @@
 // https://www.hackerrank.com/challenges/password-cracker/problem
-// Processed
+// Time Limit Exceded
 
-#include <cmath>
-#include <cstdio>
-#include <vector>
-#include <iostream>
-#include <algorithm>
-#include<string>
+#include <bits/stdc++.h>
 using namespace std;
 
-bool comprator (string a ,string b, string c) {
-    return (a.length() > b.length());
+string checkPassword(unordered_set<string_view> &pass_set, string_view loginAttempt) {
+    if (loginAttempt.empty()) {
+        return "";
+    }
+    string verified;
+    for (int i = 1; i <= loginAttempt.size(); i++) {
+        if (pass_set.find(loginAttempt.substr(0, i)) != pass_set.end()) {
+            verified = checkPassword(pass_set, loginAttempt.substr(i));
+            if (verified != "WRONG PASSWORD") {
+                return verified.empty() ?
+                    string(loginAttempt.substr(0, i)) :
+                    string(loginAttempt.substr(0, i)) + " " + verified;
+            }
+        }
+    }
+    return "WRONG PASSWORD";
 }
 
-int main() { 
-    int t;
-    cin>>t;
-    while(t--) {
-        int n;
-        cin>>n;
-        int spaces[2010]={0};
-        vector<pair<int,string> > a(n);
-        string loginA;
-        for(int i=0;i<n;i++) {
-            cin>>a[i].second;
-            a[i].first=a[i].second.length();
+string checkPassword(vector<string> &passwords, string loginAttempt) {
+    unordered_set<string_view> pass_set(passwords.begin(), passwords.end());
+    return checkPassword(pass_set, loginAttempt);
+}
+
+int main() {
+    int t, n;
+    cin >> t;
+    while (t--) {
+        cin >> n;
+        vector<string> passwords(n);
+        for (auto &password : passwords) {
+            cin >> password;
         }
-        cin>>loginA;
-        sort(a.rbegin(),a.rend());
-        string chk=loginA;
-        int i=0,j=0;
-        while(i<n) {
-            int x=chk.find(a[i].second);
-            if(x<chk.length() && x>=0) {
-                spaces[j]=x;
-                ++j;
-                for(int k=0;k<a[i].second.length();k++)
-                    chk[k+x]='1';
-            }
-            else
-                ++i;
-        }
-        int size=j;
-        bool flag=true;
-        sort(spaces,spaces+size);
-        for(int i=0;i<chk.length();i++)
-            if(chk[i]!='1')
-                flag=false;
-        if(flag) {
-            j=1;
-            for(int i=0;i<loginA.length();i++) {
-                if(i==spaces[j] && j<size) {
-                    ++j;
-                    cout<<" ";
-                }
-                cout<<loginA[i];
-            }
-            cout<<endl;
-        }
-        else
-            cout<<"WRONG PASSWORD"<<endl;
+        string loginAttempt;
+        cin >> loginAttempt;
+        cout << checkPassword(passwords, loginAttempt) << endl;
     }
     return 0;
 }
