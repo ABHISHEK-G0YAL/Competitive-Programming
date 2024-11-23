@@ -1,62 +1,100 @@
 // https://www.hackerrank.com/contests/university-codesprint-5/challenges/array-triplets/problem
-// Terminated due to timeout
 
 #include <bits/stdc++.h>
-#define ll long long
-#define pb push_back
-#define mp make_pair
-
 using namespace std;
 
-void allSubsets(int n,vector<int> &a,ll &sm,vector<int> &powerset,int set=0){
-    if(n==0) {
-        if(set!=0) {
-            ll sum=0;
-            for(int i=0;i<a.size();i++)
-                if((set & (1<<i)) != 0)
-                    sum+=a[i];
-            if(sum == sm)
-                powerset.pb(set);
+
+// Terminated due to timeout
+// O(4 ^ n)
+class Solution1 {
+    vector<int> &a, powerset;
+    long targetSum = 0;
+
+    // O(2 ^ n)
+    void allSubsets(int set = 0, int i = 0, long currentSum = 0) {
+        if (i == (int) a.size()) {
+            if (currentSum == targetSum && set) {
+                powerset.push_back(set);
+            }
+            return;
         }
-        return;
+        allSubsets(set, i + 1, currentSum);
+        allSubsets(set + (1 << i), i + 1, currentSum + a[i]);
     }
-    allSubsets(n-1,a,sm,powerset,set);
-    allSubsets(n-1,a,sm,powerset,set+(1<<(n-1)));
-}
 
-// Complete the solve function below.
-int solve(vector<int> a){
-    ll n=a.size(),sm=0,triplets=0;
-    for(int i=0;i<n;i++)
-        sm+=a[i];
-    if(sm % 3 == 0)
-        sm/=3;
-    else
-        return 0;
-    vector<int> powerset;
-    allSubsets(n,a,sm,powerset);
-    for(auto i=powerset.begin();i!=powerset.end();i++)
-        for(auto j=i+1;j!=powerset.end();j++)
-            if(((*i)&(*j))==0)
-                triplets+=2;
-    return triplets;
-}
+public:
+    Solution1(vector<int> &a) : a(a) { }
 
+    // O((2 ^ n) ^ 2)
+    int solve() {
+        for (int i : a) {
+            targetSum += i;
+        }
+        if (targetSum % 3 != 0) {
+            return 0;
+        }
+        targetSum /= 3;
+        allSubsets();
+        long triplets = 0;
+        for (int i = 0; i < (int) powerset.size(); ++i) {
+            for (int j = i + 1; j < (int) powerset.size(); ++j) {
+                if ((powerset[i] & powerset[j]) == 0)
+                    triplets += 2;
+            }
+        }
+        return triplets;
+    }
+};
 
+// O(3 ^ n)
+class Solution2 {
+    vector<int> &a;
+    long sumA = 0, sumB = 0, sumC = 0, n;
+    int countA = 0, countB = 0, countC = 0, tripletCount = 0;
 
-int main()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    ofstream fout(getenv("OUTPUT_PATH"));
+public:
+    Solution2(vector<int> &a) : a(a), n(a.size()) { }
+
+    // O(3 ^ n)
+    int solve(int i = 0) {
+        if (i == n) {
+            if (countA && countB && countC
+                && sumA == sumB
+                && sumB == sumC
+            ) {
+                ++tripletCount;
+            }
+            return 0;
+        }
+        sumA += a[i];
+        ++countA;
+        solve(i + 1);
+        sumA -= a[i];
+        --countA;
+
+        sumB += a[i];
+        ++countB;
+        solve(i + 1);
+        sumB -= a[i];
+        --countB;
+
+        sumC += a[i];
+        ++countC;
+        solve(i + 1);
+        sumC -= a[i];
+        --countC;
+
+        return tripletCount;
+    }
+};
+
+int main() {
     int n;
-    cin>>n;
+    cin >> n;
     vector<int> a(n);
-    for (int i = 0; i < n; i++)
-        cin>>a[i];
-    int result = solve(a);
-    fout << result << "\n";
-    fout.close();
-
-    return 0;
+    for (int &i : a) {
+        cin >> i;
+    }
+    Solution2 solution(a);
+    cout << solution.solve() << endl;
 }
