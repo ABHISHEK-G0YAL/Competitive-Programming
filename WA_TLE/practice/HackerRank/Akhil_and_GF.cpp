@@ -1,42 +1,45 @@
 // https://www.hackerrank.com/challenges/akhil-and-gf/problem
-// Wrong Answer
 
 #include <bits/stdc++.h>
 using namespace std;
 
-// Complete the solve function below.
-int solve(long n, int m) {
-    int num = 1;
-    vector<int> initial, loop;
-    for (int i = 0; i <= log10(m); i++) {
-        initial.push_back(num);
-        // cout << "i" << num << " ";
-        num = (num * 10 + 1) % m;
+long long modexp(long long base, long long exp, long long mod) {
+    long long result = 1 % mod;
+    base %= mod;
+    while(exp > 0) {
+        if(exp & 1)
+            result = (result * base) % mod;
+        base = (base * base) % mod;
+        exp >>= 1;
     }
-    loop.push_back(num);
-    // cout << "l" << num << " ";
-    num = (num * 10 + 1) % m;
-    while (num != loop[0]) {
-        loop.push_back(num);
-        // cout << "l" << num << " ";
-        num = (num * 10 + 1) % m;
-    }
-    // cout << endl;
-    if (n <= initial.size())
-        return initial[n - 1];
-    else
-        return loop[(n - initial.size() - 1) % loop.size()];
+    return result;
 }
 
-int main() {
+long long repunit(long long n, long long m) {
+    if(n == 1)
+        return 1 % m;
+    if(n % 2 == 0) {
+        long long r = repunit(n / 2, m);
+        long long t = modexp(10, n / 2, m);
+        return (r * (t + 1)) % m;
+    }
+    else {
+        long long r = repunit(n - 1, m);
+        return (r * 10 + 1) % m;
+    }
+}
+ 
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int t;
     cin >> t;
-
-    while (t--) {
-        long n;
+    while(t--){
+        long long n;
         int m;
         cin >> n >> m;
-        cout << solve(n, m) << "\n";
+        cout << repunit(n, m) << "\n";
     }
     return 0;
 }
