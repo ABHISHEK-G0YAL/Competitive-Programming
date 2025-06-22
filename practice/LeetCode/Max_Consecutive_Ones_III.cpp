@@ -10,7 +10,6 @@ public:
             } else {
                 ++count0;
             }
-            // cout << "l - " << l << ", r - " << r << ", count0 - " << count0 << endl;
             if (count0 > k) {
                 while (nums[l]) {
                     ++l;
@@ -18,8 +17,8 @@ public:
                 ++l;
                 --count0;
             }
+            maxCount = max(maxCount, r - l + 1);
             ++r;
-            maxCount = max(maxCount, r - l);
         }
         return maxCount;
     }
