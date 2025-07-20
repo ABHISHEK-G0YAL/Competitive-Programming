@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/query-kth-smallest-trimmed-number/
 
+// Number of queries: Q
+// Number of numbers: N
+// Length of each number: D
+
 // O (N X D + Q) - 693 ms
 class SolutionOld {
 public:
